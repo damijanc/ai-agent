@@ -1,5 +1,5 @@
 {
-    "name": "symfony/ai-agent",
+    "name": "damijanc/ai-agent",
     "description": "PHP library for building agentic applications.",
     "license": "MIT",
     "type": "library",
@@ -22,9 +22,8 @@
         "php": ">=8.2",
         "ext-fileinfo": "*",
         "phpdocumentor/reflection-docblock": "^5.4",
-        "phpstan/phpdoc-parser": "^2.1",
         "psr/log": "^3.0",
-        "symfony/ai-platform": "@dev",
+        "damijanc/ai-platform": "@dev",
         "symfony/clock": "^6.4|^7.3|^8.0",
         "symfony/http-client": "^6.4|^7.3|^8.0",
         "symfony/property-access": "^6.4|^7.3|^8.0",
@@ -33,6 +32,7 @@
         "symfony/type-info": "^6.4|^7.3|^8.0"
     },
     "require-dev": {
+         "phpstan/phpdoc-parser": "^2.1",
         "mrmysql/youtube-transcript": "^0.0.5",
         "phpstan/phpstan": "^2.0",
         "phpunit/phpunit": "^11.5.13",
@@ -44,6 +44,12 @@
         "symfony/http-foundation": "^6.4|^7.3|^8.0",
         "symfony/translation-contracts": "^3.6"
     },
+     "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/damijanc/ai-platform.git"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Symfony\\AI\\Agent\\": "src/"
